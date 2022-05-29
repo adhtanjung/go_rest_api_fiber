@@ -2,6 +2,7 @@ package router
 
 import (
 	"github.com/adhtanjung/go_rest_api/handler"
+	"github.com/adhtanjung/go_rest_api/middleware"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -9,7 +10,11 @@ import (
 func SetupRoutes(app *fiber.App) {
 	api := app.Group("/api")
 
-	v1 := api.Group("/user")
+	// Auth
+	auth := api.Group("/auth")
+	auth.Post("/login", middleware.ValidateUserLogin, handler.Login)
+
+	v1 := api.Group("/user", middleware.Protected())
 	// routes
 	v1.Get("/", handler.GetAllUsers)
 	v1.Get("/:id", handler.GetSingleUser)

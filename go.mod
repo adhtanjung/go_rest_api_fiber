@@ -9,10 +9,15 @@ require (
 
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
+	github.com/go-playground/locales v0.14.0 // indirect
+	github.com/go-playground/universal-translator v0.18.0 // indirect
+	github.com/go-playground/validator/v10 v10.11.0 // indirect
 	github.com/gofiber/fiber v1.13.3 // indirect
 	github.com/gofiber/utils v0.0.9 // indirect
+	github.com/golang-jwt/jwt/v4 v4.0.0 // indirect
 	github.com/gorilla/schema v1.1.0 // indirect
 	github.com/klauspost/compress v1.15.0 // indirect
+	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
@@ -22,8 +27,10 @@ require (
 )
 
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gofiber/basicauth v0.2.2
 	github.com/gofiber/fiber/v2 v2.34.0
+	github.com/gofiber/jwt/v2 v2.2.7
 	github.com/google/uuid v1.3.0
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.12.1 // indirect
